@@ -4,11 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /*
-    This class is for login and rest of the assignment
+    This class is for login
 */
 
-//surajtesting12102882@gmail.com
-//Suraj@12102882
 
 public class Assignment1 {
     public static void main(String[] args) throws InterruptedException {
@@ -18,7 +16,7 @@ public class Assignment1 {
 //        Enter Email
         WebElement enterEmail = driver.findElement(By.xpath("//*[@id=\"identifierId\"]"));
         enterEmail.clear();
-        enterEmail.sendKeys("surajtesting12102882@gmail.com");
+        enterEmail.sendKeys("Enter your login gmail");
         Thread.sleep(2000);
 //        next
         WebElement next1 = driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span"));
@@ -27,7 +25,7 @@ public class Assignment1 {
 //        Enter password
         WebElement enterPassword = driver.findElement(By.xpath("//*[@id=\"password\"]/div[1]/div/div[1]/input"));
         enterPassword.clear();
-        enterPassword.sendKeys("Suraj@12102882");
+        enterPassword.sendKeys("Enter your mail Password");
         Thread.sleep(4000);
 //        next
         WebElement next2 = driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button/span"));
@@ -45,7 +43,7 @@ public class Assignment1 {
             System.out.println("Some exception. holdup:/ let me check:)..\nSuraj Doctor on mission--->/)\nsheesh.. i am dead tired.All done try ot rerun the program;;:)");
 
 //        enter "TO" email
-        driver.findElement(By.xpath("//*[@id=\":c3\"]")).sendKeys("surajsingh100700@gmail.com");
+        driver.findElement(By.xpath("//*[@id=\":c3\"]")).sendKeys("Enter mail id to whom you mant to send mail");
 //        enter subject
         driver.findElement(By.xpath("//*[@id=\":8h\"]")).sendKeys("Testing for Assignment-1.01 by suraj singh");
 //        enter Body
